@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e12915b1-5b7f-41ed-bbee-f87732d5795b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Budget.java" beforeDir="false" afterPath="$PROJECT_DIR$/Budget.java" afterDir="false" />
-    </list>
+    <list default="true" id="e12915b1-5b7f-41ed-bbee-f87732d5795b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -78,13 +75,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665869428173</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added comments">
+      <created>1665871765388</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665871765388</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="I started doing some of the Budget code!" />
     <MESSAGE value="I started doing some of the Account code!" />
-    <option name="LAST_COMMIT_MESSAGE" value="I started doing some of the Account code!" />
+    <MESSAGE value="added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments" />
   </component>
 </project>

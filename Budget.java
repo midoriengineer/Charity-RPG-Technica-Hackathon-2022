@@ -31,7 +31,7 @@ public class Budget {
     }
 
     /*At the end of the month the budget resets.*/
-    void reset() {
+    void reset () {
         percentDonate = 0;
         discretionarySpend = 0;
         essentialSpend = 0;

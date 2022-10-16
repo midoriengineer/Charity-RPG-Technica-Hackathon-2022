@@ -39,7 +39,10 @@
    
     border: none;
     margin: 6px 4px;
-    padding: 10px 130px;
+    padding: 10px 30px;
+    width: 100%;
+    min-width: 200px; 
+    max-width: 325px; 
    
     display: inline-block;
     cursor: pointer;

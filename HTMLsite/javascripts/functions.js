@@ -1,33 +1,44 @@
 var points = 0;
-var percentagedDonated= 0;
+var percentageDonated= 0;
+document.getElementById("buttonB").addEventListener("click", checkMilestone);
+
+function checkMilestone() {
+    div1 = document.getElementById("milestone1")
+    div2 = document.getElementById("milestone2")
+    div3 = document.getElementById("milestone3")
+    achievedMilestone1(div1)
+    achievedMilestone2(div2)
+    achievedMilestone3(div3)
+}
 
 function increasePercentage() {
-   // percentageDonated = percentage donated as seen in budget
+   //percentageDonated = percentage donated as seen in budget
 }
+
 function increasePoints() {
     points = percentageDonated*100;
 }
 
-function achievedMilestone1(){
+function achievedMilestone1(div){
     if(points >= 500){
-        window.print("Completed!");
+        div.value="Complete!"
     } else {
-        window.print("Incomplete.")
+        div.value="Incomplete."
     }
 }
 
-function achievedMilestone2(){
+function achievedMilestone2(div){
     if(points >= 1000){
-        window.print("Completed!");
+        div.value="Complete!"
     } else {
-        window.print("Incomplete.");
+        div.value="Incomplete."
     }
 }
 
-function achievedMilestone3(){
+function achievedMilestone3(div){
     if(points>=1500){
-        window.print("Completed!");
+        div.value="Complete!"
     } else {
-        window.print("Incomplete");
+        div.value="Incomplete."
     }
 }

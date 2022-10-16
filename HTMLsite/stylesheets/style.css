@@ -76,10 +76,11 @@ img.up-down-shadow{
     font-size: 22px;
    
     border: none;
-    margin: 6px 4px;
+    margin: 10px 7px;
     padding: 10px 30px;
-    width: 300px;
-    max-width: 100%; 
+    width: 100%;
+    max-width: 320px;
+    min-width: 200px;
      
     
    
@@ -90,6 +91,7 @@ img.up-down-shadow{
   .dressupbutton {
     background-color: #e4ada1;
     border-radius: 25px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
   }
 
 /*--------------------------*/
@@ -116,9 +118,21 @@ strong {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+a green{
+    color: #9dab97;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+a {
+    color: #e4ada1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+
 /*--------------------------------*/
 .containerguide{
-    width: 100%;
+    width: 90%;
     height: 93%;
     padding-left: 30px;
     padding-top: 30px;
@@ -128,31 +142,20 @@ strong {
 
 /*---------------Popup------------*/
 
-/**{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}*/
 
-.container{
+.selectimage{
+    width: auto;
+    height: 70px;
+    padding-top: 10px;
+}
+
+.containerbutton{
     width: 100%;
     height: 10vh;
     /*background: #3c5077;*/
     display:flex;
     align-items: center;
     justify-content: center;
-}
-
-.btn{
-    padding: 10px 60px;
-    background: #fff;
-    border:0;
-    outline: none;
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: 500;
-    border-radius: 30px;
 }
 
 .popup{
@@ -167,19 +170,25 @@ strong {
     padding: 0 30px 30px;
     color: #333;
     visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
 }
 
-.popup img{
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
 }
 
 .popup h2{
     font-size: 38px;
     font-weight: 500;
     margin: 30px 0 10px;
+}
+
+.selectbutton{
+
+    background: #d5907f;
+    margin-bottom: 10px;
 }
 
 .popup button{

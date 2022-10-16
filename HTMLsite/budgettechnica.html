@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html>
+<head>
+   <link rel = "stylesheet" href = "./stylesheets/style.css" >
+</head>
 
 
 <form>
@@ -25,13 +28,15 @@
 <input type="number" step="0.01" id="earnings"/>
 <input type = "button" onclick = "myfunc()" value = "Submit" id="submitB">
 
+
+<div id="moneyEarned"></div>
 <div id="Bill"></div>
 <div id="Grocery"></div>
 <div id="Transport"></div>
 <div id="Shoppe"></div>
 <div id="Entertain"></div>
 <div id="piechart"></div>
-<div id="moneyEarned"></div>
+
 <div id="moneyLeft"></div>
 
 
@@ -45,6 +50,7 @@ var trans = 0.0
 var shop = 0.0
 var ent = 0.0
 var monEarn = 0.0
+var zero0 = 0
 
 function myfunc() {
     
@@ -76,15 +82,21 @@ function myfunc() {
    		ent = parseFloat(money) + parseFloat(ent);
         //document.getElementById("Grocery").innerHTML = "Groceries: " + groc.toString();
     }
+    
+    
+    document.getElementById("Grocery").innerHTML = "Groceries: " + groc.toFixed(2).toString();
 
-    document.getElementById("Bill").innerHTML = "Bills: " + bill.toString();
-    document.getElementById("Grocery").innerHTML = "Groceries: " + groc.toString();
-    document.getElementById("Transport").innerHTML = "Transportation: " + trans.toString();
-    document.getElementById("Shoppe").innerHTML = "Shopping: " + shop.toString();
-    document.getElementById("Entertain").innerHTML = "Entertainment: " + ent.toString();
+    
+    document.getElementById("Transport").innerHTML = "Transportation: " + trans.toFixed(2).toString();
+    
+    
+    document.getElementById("Shoppe").innerHTML = "Shopping: " + shop.toFixed(2).toString();
+    
+    
+    document.getElementById("Entertain").innerHTML = "Entertainment: " + ent.toFixed(2).toString();
 
     //fors ome reason, this goes under the pie chart after second submit, figure out why
-    document.getElementById("moneyEarned").innerHTML = "Money Earned: " + monEarn;
+    document.getElementById("moneyEarned").innerHTML = "Money Earned: " + monEarn.toFixed(2).toString();
 
     //Money left code
     //Hm for some reason, this code isn't working, but there is an input for

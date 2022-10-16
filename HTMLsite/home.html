@@ -2,7 +2,10 @@
 <!DOCTYPE html>
 
 <html>
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<<<<<<< HEAD
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,15 +16,40 @@
 <title>Charity RPG</title>
 
 <head>  <a href="home.html"><button class="button" type="button">Home</button></a> 
-    <a href="budgettechnica.html"><button class="button" type="button">Budget</button></a>
+    <a href="budget.html"><button class="button" type="button">Budget</button></a>
     <a href="Charity.html"><button class="button" type="button">Charities</button></a>
     <a href="milestones.html"><button class="button" type="button">Milestones</button></a>  
     </head>
+=======
+    <script src= "./javascripts/functions.js"></script>
+    <script src= "./javascripts/dressup.js"></script>
+    <link rel= "stylesheet" href="./stylesheets/style.css"> 
+
+    <title>Charity RPG</title>
+    <div class="row">
+        <div class="column">
+            <a href="home.html"><button class="button" type="button">Home</button></a> 
+        </div>
+        <div class="column">
+            <a href="budget.html"><button class="button" type="button">Budget</button></a>
+        </div>
+        <div class="column">
+            <a href="Charity.html"><button class="button" type="button">Charities</button></a>
+        </div>
+        <div class="column">
+            <a href="milestones.html"><button class="button" type="button">Milestones</button></a>  
+        </div>
+    </div>
+
+
+</head>
+>>>>>>> d6450173c882380316f431608fdb8799175a2b2f
 
 <h1>Charity RPG</h1>
 
 <body>
 
+<<<<<<< HEAD
     <a class="btn" onclick="pop()">Show Box</a>
 
   <div id="box">
@@ -36,25 +64,99 @@
 
 
 
+=======
+
+    
+>>>>>>> d6450173c882380316f431608fdb8799175a2b2f
     <div class="row">
   
         <div class="column"><div class="monsterimage">
             <img class="background" src="bg_chiheisen_green.jpg" />
-            <img class="monster" src="monster06.png" />
+            <img class="monster up-down-shadow" src="monster06-shadow.png" />
+            <img class="monster up-down" src="monster06.png" />
+            <img class="monster up-down" src="wearnohat.png" id="customHat" />
+
           </div>
         </div>
 
         <div class="column">
+
+            
+
+            <div class="containerguide">
             <h2 style="padding-left: 30px;">SAY HI TO GOOP!</h2>
             <p style="padding-left: 30px;padding-right: 30px;">Welcome to Charity RPG! <i>The game that fits donating into your budget.</i></p>
             <p style="padding-left: 30px;padding-right: 30px;">As you blast through donation milestones, <strong>Goop</strong> will be right by your side every step of the way! But--! Oh no! <i>Goop has no swag!!</i> But worry not. You can earn very VERY stylish hats for Goop by <strong>leveling up and completing milestones</strong>.</p>
             <p style="padding-left: 30px;padding-right: 30px;"><i>"But how do I level up?"</i> one may ask. Easy peasy! You know that money you already spend on eating out or unused streaming subscriptions? <strong>Consider donating a small portion of that to a charity of your choice</strong> to level up and unlock very cool hats to customize Goop with. </p>
             <p style="padding-left: 30px;padding-right: 30px;">That's it! Now all that's left is to fill out your monthly budget and, if you donated this month, watch the hats come rolling in. Click "Budget" to get started and get that swag! \(^0^)/</p> 
-            <p style="padding-left: 30px;padding-right: 30px;"><button class="button dressupbutton" type="button">Dress Up Goop</button></p>
+            <div class="containerbutton">
+                <p style="padding-left: 30px;padding-right: 30px;">
+                    <button class="button dressupbutton" onclick="openPopup()" type="button">Dress Up Goop</button>
+                </p>
+            </div>
         </div>
+<<<<<<< HEAD
       </div>
 
 </body>
+=======
+        </div>
+      </div>        
+    </div>
 
+    <div class="popup" id="popup">
+        <h2>Select Swag</h2>
+        <p>Choose a hat for Goop.</p>
+        <div class="row">
+            <div class="column">
+                <img class="selectimage" src="wearnohat.png" id="noHat" />
+                <button class="selectbutton" onclick="changeImageNone()" style="background: #d5907f; margin-top: 10px; margin-right: 7px;">No hat</button>
+            </div>
+            <div class="column">
+                <img class="selectimage" src="selectDrippyHat.png" id="dripHat" />
+                <button class="selectbutton" onclick="changeImageDrip()" style="background: #d5907f; margin-top: 10px; margin-left: 7px;">Drippy hat</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="selectimage" src="selectTopHat.png" id="topHat" />
+                <button class="selectbutton" onclick="changeImageTop()" style="background: #d5907f; margin-top: 10px; margin-right: 7px;">Top hat</button>
+            </div>
+            <div class="column">
+                <img class="selectimage" src="selectYankeeNoBrim.png" id="brimHat" />
+                <button class="selectbutton" onclick="changeImageBrim()" style="background: #d5907f; margin-top: 10px; margin-left: 7px;">No Brim hat</button>
+            </div>
+        </div>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+
+     
+<script>
+
+let popup = document.getElementById("popup");
+function openPopup(){popup.classList.add("open-popup");}
+function closePopup(){popup.classList.remove("open-popup");
+
+var image = document.getElementById("customHat");
+var imageNone = document.getElementById("noHat");
+var imageDrip = document.getElementById("dripHat");
+var imageTop = document.getElementById("topHat");
+var imageBrim = document.getElementById("brimHat");
+
+imageNone.addEventListener("click", function(){ changeImageNone(); });
+function changeImageNone(){ image.src = "wearnohat.png"; }
+
+imageDrip.addEventListener("click", function(){ changeImageDrip(); });
+function changeImageDrip(){ image.src = "weardrippyhat.png"; }
+   
+imageTop.addEventListener("click", function(){ changeImageTop(); });
+function changeImageTop(){ image.src = "weartophat.png"; }
+
+imageBrim.addEventListener("click", function(){ changeImageBrim();});
+function changeImageBrim(){ image.src = "wearyankeehat.png";}
+
+</script>
+
+</body>
 
 </html>

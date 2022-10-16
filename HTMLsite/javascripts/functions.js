@@ -2,6 +2,20 @@ var points = 0;
 var percentageDonated= 0;
 document.getElementById("buttonB").addEventListener("click", checkMilestone);
 
+var groc = 0.0
+var trans = 0.0
+var shop = 0.0
+var ent = 0.0
+var monEarn = 0.0
+
+function myfunc() {
+    
+	var money = document.getElementById("number").value;
+
+    monEarn = parseFloat(document.getElementById("earnings").value) + parseFloat(monEarn)
+    
+}
+
 function checkMilestone() {
     div1 = document.getElementById("milestone1")
     div2 = document.getElementById("milestone2")
@@ -12,8 +26,8 @@ function checkMilestone() {
 }
 
 function increasePercentage() {
-   //percentageDonated = percentage donated as seen in budget
-}
+    var discretionarySpending = shop+ent
+    percentageDonated = discretionarySpending/monEarn
 
 function increasePoints() {
     points = percentageDonated*100;

@@ -1,0 +1,47 @@
+.monsterimage {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .background {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: none;
+  }
+  
+  .monster {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    border: none;
+  }
+
+
+.button {
+    color: white;
+    background-color: #73836c;
+    
+    text-align: center;
+    font-size: 22px;
+   
+    border: none;
+    margin: 6px 4px;
+    padding: 10px 130px;
+   
+    display: inline-block;
+    cursor: pointer;
+  }
+head {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+  
+h1 {
+    color: #d5907f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}

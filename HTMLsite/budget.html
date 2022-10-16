@@ -1,12 +1,36 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-   <link rel = "stylesheet" href = "./stylesheets/style.css" >
+    <script src= "./javascripts/functions.js"></script>
+    <link rel= "stylesheet" href="./stylesheets/style.css"> 
+
+    <title>Charity RPG</title>
+    <div class="row">
+        <div class="column">
+            <a href="home.html"><button class="button" type="button">Home</button></a> 
+        </div>
+        <div class="column">
+            <a href="budget.html"><button class="button" type="button">Budget</button></a>
+        </div>
+        <div class="column">
+            <a href="Charity.html"><button class="button" type="button">Charities</button></a>
+        </div>
+        <div class="column">
+            <a href="milestones.html"><button class="button" type="button">Milestones</button></a>  
+        </div>
+    </div>
+
+
 </head>
 
+<h1>My Budget</h1>
 
-<form>
+<br>
+<br>
+<br>
+<br>
+
+<form class="text">
     <select name = "subject" id="subject">
         <optgroup label="Neccesities">
   	<option value="Bills" id="Bills">Bills</option>
@@ -27,7 +51,7 @@
 <label for="money">Enter the amount you spent:</label>
 <input type="number" step="0.01" id="number"/>
 <br>
-<input type = "button" onclick = "myfunc()" value = "Submit" id="submitB">
+<input class="button budgetbutton" type = "button" onclick = "myfunc()" value = "Submit" id="submitB">
 
 
 <div id="moneyEarned"></div>

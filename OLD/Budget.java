@@ -3,23 +3,20 @@ public class Budget {
     double discretionarySpend;
     double essentialSpend;
 
-    /*Creates a new Budget. User inputs the percentage of their discretionary
-    income they want to donate. Essential and discretionary spending are
-    initialized at 0.*/
+    /*Creates a new Budget. User inputs the percentage of their discretionary spending they want to
+    * donate. Essential and discretionary spending are initialized at 0.*/
     public Budget(double percentIn) {
         percentDonate = percentIn;
         essentialSpend = 0;
         discretionarySpend = 0;
     }
 
-    /*Increases the amount of essential spending by the amount specified
-    * by the user*/
+    /*Increases the amount of essential spending by the amount specified by the user*/
     double addEssential(double spentAmount) {
         return essentialSpend+spentAmount;
     }
 
-    /*Increases the discretionary spending by the amount specified by
-    * the user*/
+    /*Increases the discretionary spending by the amount specified by the user*/
     double addDiscretionary(double spentAmount){
         return discretionarySpend+spentAmount;
     }
